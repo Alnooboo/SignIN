@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign in</title>
+    <script src="singInJS.js"></script>
+    <link rel="stylesheet" href="signInCSS.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+    <form action="#">
+        <div id="fullpage">
+            <h1 id="signIN">Sign in</h1>
+
+            <table>
+                <!--1 colm-->
+                <tr>
+                    <td class="label_col">
+                        <p>First Name:</p>
+                    </td>
+                    <td class="input_col">
+                        <input type="text" id="firstName" onblur="validateFirstName()" required>
+                    </td>
+                    <td class="feedbackk_col">
+                        <span id="fisrtNamePrompt"></span>
+                    </td>
+                </tr>
+                <!--2 colm-->
+                <tr>
+                    <td class="label_col">
+                        <p>Last Name:</p>
+                    </td>
+                    <td class="input_col">
+                        <input type="text" name="lastName" id="lastName" onblur="validateLastName()">
+                    </td>
+                    <td class="feedbackk_col">
+                        <span id="lastNamePrompt"></span>
+                    </td>
+                </tr>
+                <!--3 colm-->
+                <tr>
+                    <td class="label_col">
+                        Phone Number:
+                    </td>
+                    <td class="input_col">
+                        <input type="number" name="000" id="phoneNumber">
+                    </td>
+                    <td class="feedbackk_col">
+                        <span id="phoneNumberPrompt"></span>
+                    </td>
+                </tr>
+                <!--4 colm-->
+                <tr>
+                    <td class="label_col">
+                        <p>Username:</p>
+                    </td>
+                    <td class="input_col">
+                        <input type="text" id="Username" onblur="validateUsername()" required>
+                    </td>
+                    <td class="feedbackk_col">
+                        <span id="UsernamePrompt"></span>
+                    </td>
+                </tr>
+                <!--5 colm-->
+                <tr>
+                    <td class="label_col">
+                        <p>Password:</p>
+                    </td>
+                    <td class="input_col">
+                        <input type="password" id="password" onblur="validatePassword()" required>
+                        <button type="button" onclick="togglePasswordVisibility()">Show</button>
+                    </td>
+                    <td class="feedbackk_col">
+                        <span id="PasswordPrompt"></span>
+                    </td>
+                </tr>
+                <!--6 colm-->
+                <tr>
+                    <td class="label_col">
+                        <p>Email Address:</p>
+                    </td>
+                    <td class="input_col">
+                        <input type="email" name="email" id="email" onblur="validateEmail()">
+                    </td>
+                    <td class="feedbackk_col">
+                        <span id="emailPrompt"></span>
+                    </td>
+                </tr>
+            </table>
+                    <div class="buttonCenter">
+                        <button type="submit" onclick="buttonClicked(event)"><span>sign in!</span></button>
+                    </div>    
+                    
+                
+            
+
+        </div>
+    </form>
+    
+</body>
+</html>

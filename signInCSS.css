@@ -1,0 +1,78 @@
+#firstName,
+#lastName,
+#Username,
+#password {
+    width: 100px;
+
+}
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+#fullpage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*all the above make them at the center*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*all the above make sure the data are shown correctly*/
+    height: 100vh;
+    /* Adjust this value as needed */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+table {
+    margin-top: 20px;
+    /* Adjust this value as needed */
+}
+
+.buttonCenter button {
+    padding: 10px 20px; /* Adjust the padding values as needed */
+    background-color: #183d5c;
+    color: #ffe4e1;
+    border: 1px solid #183d5c;
+    
+    outline: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    
+}
+  
+
+.buttonCenter:hover {
+    background-color: #215178;
+}
+
+
+body {
+    background-color: #14324b;
+    color: #ffe4e1;
+    font-family: 'Arial', sans-serif;
+
+
+}
+
+.shake-animation {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
